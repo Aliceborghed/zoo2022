@@ -1,0 +1,19 @@
+#wrapper {
+    display:grid;    
+}
+
+/* En header... */
+header {
+    background-color: #71CD8B;
+    width: 1440px;
+    height: 100px;
+    font-size: 70px;
+    font-family: helvetica;
+    text-align: center;
+    color:white;
+}
+
+
+body {
+    background-image: url("../img/animals/startsida_1440x750.png");
+}
