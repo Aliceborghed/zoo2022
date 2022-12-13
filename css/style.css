@@ -1,8 +1,95 @@
+body {
+    margin: 0;
+}
+
 #wrapper {
     display:grid;    
 }
 
-/* En header... */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 10vh;
+    background-color: #71CD8B;
+    font-family: Helvetica;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: -90vh;
+    top: 10vh;
+    background-color: #71CD8B;
+    align-items: left;
+    width: 20%;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navlinks a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10%;
+}
+
+.line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.line2 {
+    opacity: 0;
+}
+
+.line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, -6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
 header {
     background-color: #71CD8B;
     width: 1440px;
@@ -13,7 +100,8 @@ header {
     color:white;
 }
 
-
-body {
+body#index {
     background-image: url("../img/animals/startsida_1440x750.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
