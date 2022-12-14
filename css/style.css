@@ -29,7 +29,7 @@ nav {
     position: absolute;
     left: 0px;
     height: -90vh;
-    top: 15vh;
+    top: -100vh; /* Lägg menyn utanför sidan så den inte syns */
     background-color: #71CD8B;
     align-items: left;
 
@@ -46,20 +46,16 @@ table, td{
     table-layout: fixed;
 }
 
+/* Visa menyn genom att flytta ner den så den syns */
 .navActive {
-    transform: translateY(100vh);
+    transform: translateY(115vh);
 }
 
-.navLinks li {
-    list-style: none;
-}
-
-.navlinks a {
+.navlinks, a {
     color: white;
-    text-decoration: none;
-    letter-spacing: 3px;
     font-weight: bold;
     font-size: 30px;
+    text-decoration: none;
 }
 
 /* Burgaren */
