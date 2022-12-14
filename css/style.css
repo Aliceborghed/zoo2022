@@ -12,30 +12,38 @@ body {
     box-sizing: border-box;
 }
 
-
-
-
-
 nav {
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 10vh;
+    height: 15vh;
     background-color: #71CD8B;
     font-family: Helvetica;
 }
 
+/* Menu-alternativ */
 .navLinks {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
-   left: 0px;
+    left: 0px;
     height: -90vh;
-    top: 20vh;
+    top: 15vh;
     background-color: #71CD8B;
     align-items: left;
-    width: 20%;
+
+}
+
+table, td{
+    border: 15px solid;
+    border-color: #22723F;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 30px;
+    height: 80px;
+    width: 150px;
+    table-layout: fixed;
 }
 
 .navActive {
@@ -54,7 +62,7 @@ nav {
     font-size: 30px;
 }
 
-
+/* Burgaren */
 .burger div {
     width: 25px;
     height: 3px;
@@ -86,10 +94,6 @@ nav {
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
-
-
 
 header {
     display: grid;

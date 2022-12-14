@@ -2,9 +2,8 @@ const nav = document.querySelector('.navLinks')
 const burger = document.querySelector('.burger')
 
 function toggleMeny() {
-    nav.classList.toggle('navActive')
-    burger.classList.toggle('toggle')
-
+    nav.classList.toggle('navActive') /* Togglar länkarna */
+    burger.classList.toggle('toggle') /* Togglar hamburgaren */
 }
 
 
