@@ -45,6 +45,9 @@ main {
     /*border: solid 1px black;*/
     grid-area: mn;
     background-color: white;
+}
+
+main.index {
     background-image: url("../img/animals/startsida_1440x750.png");
     background-size: cover;
     background-repeat: no-repeat;
