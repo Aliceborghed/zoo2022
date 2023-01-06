@@ -1,13 +1,3 @@
-body {
-    margin: 0;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 /******************************************************************************
 * Layout stuff
 *******************************************************************************/
@@ -29,7 +19,7 @@ body {
 menu {
     /*border: solid 1px black;*/
     grid-area: bg;
-    align-content: center;
+    align-self: center;
 }
 
 header {
@@ -39,6 +29,7 @@ header {
     font-family: helvetica;
     text-align: center;
     color:white;
+    align-self: center;
 }
 
 main {
@@ -51,6 +42,7 @@ main.index {
     background-image: url("../img/animals/startsida_1440x750.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right ;
 }
 
 footer {
@@ -59,6 +51,7 @@ footer {
     text-align: center;
     color:white;
     font-size: 2vh;
+    align-self: center;
 }
 
 /******************************************************************************
@@ -99,6 +92,12 @@ table, td{
 /******************************************************************************
 * Burger stuff
 *******************************************************************************/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 .burger div {
     grid-area: bg;
     width: 25px;
