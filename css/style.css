@@ -2,37 +2,72 @@ body {
     margin: 0;
 }
 
-#wrapper {
-    display:grid;    
-}
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-nav {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 15vh;
+/******************************************************************************
+* Layout stuff
+*******************************************************************************/
+#wrapper {
+    /*border: solid 1px black;*/
+    display:grid;
     background-color: #71CD8B;
-    font-family: Helvetica;
+    width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    grid-template-areas:
+    "bg hd"
+    "mn mn"
+    "ft ft";
+    grid-template-columns: 5vw 95vw;
+    grid-template-rows: 10vh 85vh 5vh;
 }
 
+menu {
+    /*border: solid 1px black;*/
+    grid-area: bg;
+    align-content: center;
+}
+
+header {
+    /*border: solid 1px black;*/
+    grid-area: hd;
+    font-size: 4vh;
+    font-family: helvetica;
+    text-align: center;
+    color:white;
+}
+
+main {
+    /*border: solid 1px black;*/
+    grid-area: mn;
+    background-color: white;
+    background-image: url("../img/animals/startsida_1440x750.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    /*border: solid 1px black;*/
+    grid-area: ft;
+    text-align: center;
+    color:white;
+    font-size: 2vh;
+}
+
+/******************************************************************************
+* Meny stuff
+*******************************************************************************/
 /* Menu-alternativ */
 .navLinks {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     position: absolute;
-    left: 0px;
-    height: -90vh;
+    left: 0vw;
     top: -100vh; /* Lägg menyn utanför sidan så den inte syns */
     background-color: #71CD8B;
     align-items: left;
-
 }
 
 table, td{
@@ -48,7 +83,7 @@ table, td{
 
 /* Visa menyn genom att flytta ner den så den syns */
 .navActive {
-    transform: translateY(115vh);
+    transform: translateY(110vh);
 }
 
 .navlinks, a {
@@ -58,8 +93,11 @@ table, td{
     text-decoration: none;
 }
 
-/* Burgaren */
+/******************************************************************************
+* Burger stuff
+*******************************************************************************/
 .burger div {
+    grid-area: bg;
     width: 25px;
     height: 3px;
     background-color: white;
@@ -68,46 +106,31 @@ table, td{
 }
 
 .line1 {
+    grid-area: bg;
     /* transform: rotate(-45deg) translate(-5px, 6px); */
 }
 
 .line2 {
+    grid-area: bg;
     /* opacity: 0; */
 }
 
 .line3 {
+    grid-area: bg;
     /* transform: rotate(45deg) translate(-5px, -6px); */
 }
 
 .toggle .line1 {
+    grid-area: bg;
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
+    grid-area: bg;
     opacity: 0;
 }
 
 .toggle .line3 {
+    grid-area: bg;
     transform: rotate(45deg) translate(-5px, -6px);
-}
-
-header {
-    display: grid;
-    grid-template-columns: 200px 1fr 100px;
-    background-color: #71CD8B;
-    /* width: 1440px; */
-    /* height: 100px; */
-    font-size: 40px;
-    font-family: helvetica;
-    justify-content: space-between;
-    color:white;
-}
-
-body#index {
-    background-image: url("../img/animals/startsida_1440x750.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-h1 {
-    align-items: center;
 }
