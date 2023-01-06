@@ -45,6 +45,7 @@ main.index {
     background-position: right ;
 }
 
+
 footer {
     /*border: solid 1px black;*/
     grid-area: ft;
@@ -52,6 +53,48 @@ footer {
     color:white;
     font-size: 2vh;
     align-self: center;
+}
+
+table.hitta {
+    /*border: solid 1px black;*/
+    grid-area: mn;
+    text-align: center;
+    table-layout: fixed;
+    width: 50vw;
+    height: 100%;
+    border: solid 1px black;
+    overflow: hidden;
+}
+
+td.hitta { 
+    /*border: solid 1px black;*/
+    grid-area: mn;
+    width: 50vw;
+}
+
+tr.hitta {
+    /*border: solid 1px black;*/
+    grid-area: mn;
+}
+
+h2 {
+    font-family: Helvetica;
+    font-size: 45px;   
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:80%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /******************************************************************************
@@ -66,7 +109,7 @@ footer {
     align-items: left;
 }
 
-table, td{
+table.menu, td.menu{
     border: 15px solid;
     border-color: #22723F;
     border-collapse: collapse;
