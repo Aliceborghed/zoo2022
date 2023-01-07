@@ -45,6 +45,15 @@ main.index {
     background-position: right ;
 }
 
+main.djur {
+    grid-area: mn;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
 footer {
     /*border: solid 1px black;*/
@@ -62,7 +71,6 @@ table.hitta {
     table-layout: fixed;
     width: 50vw;
     height: 100%;
-    border: solid 1px black;
     overflow: hidden;
 }
 
