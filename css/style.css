@@ -13,7 +13,7 @@
     "mn mn"
     "ft ft";
     grid-template-columns: 5vw 95vw;
-    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-rows: 10vh auto 5vh;
 }
 
 menu {
@@ -35,6 +35,7 @@ header {
 main {
     /*border: solid 1px black;*/
     grid-area: mn;
+    height:85vh;
     background-color: white;
 }
 
@@ -50,8 +51,11 @@ main.djur {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 5px;
     justify-content: space-around;
     align-items: center;
+    height:auto;
+    min-height: 85vh;
 }
 
 .djurbild {
@@ -61,8 +65,9 @@ main.djur {
 }
 
 img {
-    width: 25vw;
-    height: ;
+    grid-area: mn;
+    width: 100%;
+    height: auto;
     max-height: 33%;
 }
 
